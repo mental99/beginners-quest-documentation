@@ -70,7 +70,11 @@ Theories:
 
 ## Chal 8
 
-Flag: *Unsolved*
+Flag: `CTF{DidYouKnowPNGisPronouncedPING?}`
 
-Theories:
-- Involves PNG
+Solution:
+- Some image viewers showed a black image, others showed a few rows of black pixels before showing an error and failing to load the rest of the image
+- Dumped every chunk from the PNG, realized there were many `eDIH` chunks (invalid chunk name) included
+- Reversing the chunk name `eDIH` is `HIDe`, hinted by the filename `hideandseek.png`
+- Noticed that when concatenating every `eDIH` chunk it resulted in a base64 string `Q1RGe0RpZFlvdUtub3dQTkdpc1Byb25vdW5jZWRQSU5HP30=`
+- Decoding resulted in the flag
