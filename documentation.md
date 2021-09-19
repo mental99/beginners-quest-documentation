@@ -71,5 +71,6 @@ Theories:
 ## Chal 8
 
 Flag: *Unsolved*
+
 Theories:
 - Involves PNG
