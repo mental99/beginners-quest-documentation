@@ -2,6 +2,7 @@ Google 2021 CTF BeginnerQuest
 website: https://capturetheflag.withgoogle.com/beginners-quest
 
 ---FLAGS AND SOLUTIONS---
+
 1:
 Flag: CTF{IJustHopeThisIsNotOnShodan}
 Solution:
