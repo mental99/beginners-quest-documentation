@@ -67,6 +67,7 @@ Flag: *Unsolved*
 Theories:
 - Uses python
 - There's a `__pycache__` folder in the zip, doesn't include the flag or anything else interesting except the filepath: `/usr/local/google/home/jbuff/Documents/KCTF/2021-challenges-quals/beginners/crypto-babyrsa/attachments/chall.py`
+- The python file uses `PyCrypto` which has a buffer overflow resulting in remote code exec vulnerability, but it doesn't seem to apply to this challenge
 
 ## Chal 8
 
